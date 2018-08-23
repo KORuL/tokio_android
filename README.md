@@ -4,7 +4,7 @@ Try use tokio example on android
 
 ## Usage
 
-### Compile
+### Compile to android
 
 1. `git clone git@github.com:KORuL/tokio_android.git`
 2. `cd tokio_android`
@@ -49,6 +49,10 @@ and etc
 8. `./compile`
 
 It may also be necessary for the reed-solomon-erasure package to change the branch to dev
+
+### Compile to linux
+
+1. cargo build
 
 ### Current State
 
