@@ -1,0 +1,27 @@
+[package]
+name = "tokio_android"
+version = "0.1.0"
+authors = ["KORuL <korul1@yandex.ru>"]
+autobins = false
+
+#
+[target.'cfg(target_os="android")'.dependencies]
+jni = { version = "0.5", default-features = false }
+#
+[lib]
+crate-type = ["dylib"]
+#
+
+[dependencies]
+log = "*"
+tokio = "0.1.7"
+tokio-codec = "*"
+tokio-io = "*"
+bincode = "0.8"
+tokio-serde = "*"
+tokio-serde-bincode = "*"
+
+
+[profile.release]
+debug = true
+debug-assertions = true
