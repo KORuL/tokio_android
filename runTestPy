@@ -1,6 +1,0 @@
-#/bin/bash
-
-# Starts python scripts
-# =========================
-
-gnome-terminal -e "python ./example.py" 
