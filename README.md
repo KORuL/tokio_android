@@ -6,12 +6,19 @@ Try use tokio example on android
 
 ### Compile to android
 
+0. download
+* Android SDK Tools
+* NDK
+* CMake
+* LLDB
+
 1. `git clone git@github.com:KORuL/tokio_android.git`
 2. `cd tokio_android`
 
 3. set needs environments 
 
 `export ANDROID_HOME=/Users/$USER/Library/Android/sdk`
+
 `export NDK_HOME=$ANDROID_HOME/ndk-bundle` 
 
 and etc
@@ -45,6 +52,8 @@ and etc
 7. need copy this config file to our .cargo directory like this:
 
 `cp cargo-config.toml ~/.cargo/config`
+
+7.1. `rustup target add aarch64-linux-android armv7-linux-androideabi i686-linux-android`
 
 8. `./compile`
 
