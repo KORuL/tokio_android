@@ -7,3 +7,8 @@
 cargo build --target aarch64-linux-android
 cargo build --target armv7-linux-androideabi
 cargo build --target i686-linux-android
+
+
+cp -f /home/user/hbbft/greetings/tokio_android/target/aarch64-linux-android/debug/libtokio_android.so /home/user/AndroidStudioProjects/hbbft/app/src/main/jniLibs/arm64/libtokio_android.so
+cp -f /home/user/hbbft/greetings/tokio_android/target/armv7-linux-androideabi/debug/libtokio_android.so /home/user/AndroidStudioProjects/hbbft/app/src/main/jniLibs/armeabi/libtokio_android.so
+cp -f /home/user/hbbft/greetings/tokio_android/target/i686-linux-android/debug/libtokio_android.so /home/user/AndroidStudioProjects/hbbft/app/src/main/jniLibs/x86/libtokio_android.so

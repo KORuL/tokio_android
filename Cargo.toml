@@ -15,13 +15,5 @@ crate-type = ["dylib"]
 [dependencies]
 log = "*"
 tokio = "0.1.7"
-tokio-codec = "*"
-tokio-io = "*"
-bincode = "0.8"
-tokio-serde = "*"
-tokio-serde-bincode = "*"
-
-
-[profile.release]
-debug = true
-debug-assertions = true
+[target.'cfg(target_os = "android")'.dependencies]
+android_logger =  { git = "https://github.com/Nercury/android_logger-rs" }
